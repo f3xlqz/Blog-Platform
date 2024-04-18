@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="font-[Poppins] ">
+    <header class="bg-white flex h-[5rem] shadow-lg">
+        <nav class="flex justify-between items-center w-[85%]  mx-auto">
+            <div>
+                <a href="#">
+                    <h1 class="font-[Kanit] font-medium	text-3xl text-[#000292]">
+                        บล็อกคลิ้คซ์
+                    </h1>
+                </a>
+            </div>
+            <div
+                class="z-10 nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 font-medium">
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Create Blog</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="#">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+                <button class="bg-[#000] text-white px-5 py-2 rounded-lg hover:bg-[#1c2370]">Get Started</button>
+
+                <button class="text-black px-5 py-2 rounded-lg hover:bg-[#1c2370] hover:text-white">login</button>
+
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <section>
+        <div class="flex relative w-[85%] mx-auto mt-5 items-center">
+            <input type="text"
+                class="font-[Kanit] pl-10 w-full h-[2rem] bg-transparent border-b-2 border-gray-700 placeholder-gray-900 font-normal	outline-none"
+                placeholder="ค้นหาบล็อกคลิ้คซ์ที่ใช่... ">
+            <i class="bx bx-search text-gray-900 absolute ml-3"></i>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-[85%] mx-auto mt-5 flex flex-col md:flex md:flex-col">
+
+            <!-- flex ซ้าย -->
+            <div class="">
+                <!-- title -->
+                <div class="text-3xl font-medium text-black my-5">
+                    <h1 class="">Featured Posts</h1>
+                </div>
+                <div class="mb-3">
+                    <img class="rounded-lg my-3"
+                        src="https://assets.beartai.com/uploads/2023/12/maxresdefault-2023-12-27T192913.384.jpg">
+                    <h3 class="font-[Kanit] text-xl font-medium">เเบไต๋ 5 เทรนด์เทคโนโลยี 2024 <br>
+                        มีอะไรน่าจับตา ไปชมกัน !</h3>
+                    <p class="text-sm text-gray-700 font-light">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptas, rem?</p>
+                    <p class="text-sm font-medium">Sirisak in Design</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                </div>
+            </div>
+
+            <!-- flex center -->
+            <div class="">
+                <div class="">
+                    <img class="rounded-lg"
+                        src="https://www.moneybuffalo.in.th/wp-content/uploads/2023/12/%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B52024-web-768x401.jpg"
+                        alt="">
+
+                    <div class="">
+                        <h3 class="font-[Kanit] text-base font-medium">สรุป 5 เทรนด์เทคโนโลยี 2024 มาเเรง ! <br>
+                            ลงทุนเกาะเทรนด์ยังไงดี?</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="rounded-lg "
+                        src="https://www.moneybuffalo.in.th/wp-content/uploads/2023/12/%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B52024-web-768x401.jpg"
+                        alt="">
+
+                    <div class="">
+                        <h3 class="font-[Kanit] text-base font-medium">สรุป 5 เทรนด์เทคโนโลยี 2024 มาเเรง ! <br> ลงทุนเกาะเทรนด์ยังไงดี?</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="rounded-lg"
+                        src="https://www.moneybuffalo.in.th/wp-content/uploads/2023/12/%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B52024-web-768x401.jpg"
+                        alt="">
+
+                    <div class="">
+                        <h3 class="font-[Kanit] text-base font-medium">สรุป 5 เทรนด์เทคโนโลยี 2024 มาเเรง ! <br> ลงทุนเกาะเทรนด์ยังไงดี?</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="my-5">
+                    <h1 class="text-3xl font-medium text-black">Trending</h1>
+                </div>
+                <div class="flex gap-3">
+                    <h1 class="flex w-16 h-16 text-3xl text-white bg-black rounded-full items-center justify-center">1
+                    </h1>
+
+                    <div class="flex flex-col">
+                        <h3 class="font-[Kanit] text-xl font-medium">เปิด 7 เทคโนโลยีปี 2024 <br> "เอไอ ความยั่งยืน
+                            คลาวด์ฯ" มาเเรง !</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+
+                <hr class="my-3 border-black">
+
+                <div class="flex gap-3">
+                    <h1 class="flex w-16 h-16 text-3xl text-white bg-black rounded-full items-center justify-center">2
+                    </h1>
+
+                    <div class="flex flex-col">
+                        <h3 class="font-[Kanit] text-xl font-medium">เปิด 7 เทคโนโลยีปี 2024 <br> "เอไอ ความยั่งยืน
+                            คลาวด์ฯ" มาเเรง !</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+
+                <hr class="my-3 border-black">
+
+                <div class="flex gap-3">
+                    <h1 class="flex w-16 h-16 text-3xl text-white bg-black rounded-full items-center justify-center">3
+                    </h1>
+
+                    <div class="flex flex-col">
+                        <h3 class="font-[Kanit] text-xl font-medium">เปิด 7 เทคโนโลยีปี 2024 <br> "เอไอ ความยั่งยืน
+                            คลาวด์ฯ" มาเเรง !</h3>
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                        <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="">
+        <div class="w-[85%] mx-auto">
+            <div class="text-3xl font-medium text-black my-5">
+                <h1>Topic</h1>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5 ">
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+                </div>
+                <div class="">
+                    <a href="#">
+                        <img class="rounded-lg"
+                            src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LI9c171YIZcP6tZUVp2zhLBBJAypPxmBqBFLz4AE4vSM5jXGKC.jpg">
+                    </a>
+                    <h3 class="my-3 text-xl font-semibold">Topic name</h3>
+                    <p class="text-sm font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorem
+                        nostrum adipisci eum veniam voluptatum.</p>
+                    <p class="text-sm text-gray-700 font-light">April 19,2024 6 min read</p>
+                    <div class="flex gap-3 my-3">
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Technology</p>
+                        <p class="border-black border-[0.1rem] px-5 py-2 rounded-3xl">Software</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[14%]')
+        }
+    </script>
+</body>
+
+</html>
