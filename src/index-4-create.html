@@ -49,14 +49,15 @@
                         <a class="hover:text-gray-500" href="#">Create Blog</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="index-3-profile.html">Profile</a>
+                        <a class="hover:text-gray-500" href="#">Profile</a>
                     </li>
                 </ul>
             </div>
             <div class="flex items-center gap-2">
                 <button class="bg-[#000] text-white px-5 py-2 rounded-lg hover:bg-[#1c2370]">Get Started</button>
 
-                <button class="relative bg-transparent border-[1.5px] border-[#1c2370] rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:font-normal	before:hover:scale-100">login</button>
+                <button
+                    class="relative bg-transparent border-[1.5px] border-[#1c2370] rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:font-normal	before:hover:scale-100">login</button>
 
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
@@ -73,13 +74,14 @@
         </div>
     </section>
 
-    <!-- home -->
+    <div class="mt-5 w-[90%] mx-auto">
+        <h1 class="text-3xl font-medium">Create your blog</h1>
+    </div>
 
-    <section class="my-5">
-        <div class="flex flex-col w-[90%] mx-auto lg:flex lg:flex-row lg:gap-5">
+    <main class="flex flex-col items-center">
+        <section class="w-[90%] lg:flex lg:flex-row lg:gap-5">
 
-            <!-- all blog-->
-
+            <!-- bar ซ้าย -->
             <!-- blog side ซ้าย -->
             <div class="hidden lg:w-[20%] lg:flex">
 
@@ -90,82 +92,89 @@
                     </h1>
                     <ul class="lg:font-[Kanit]">
                         <li class="">
-                            <a href="#list-1" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
-                                เเบไต๋ 5 เทรนด์เทคโนโลยี <br> น่าจับตาไปชมกัน !
+                            <a href="#title-1" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
+                                Title name 1
                             </a>
                         </li>
                         <li class="">
-                            <a href="#list-2" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800  hover:before:w-full hover:before:opacity-100">
-                                ทำไมเราถึงต้องตามเทรนด์เทคโนโลยี เทคโนโลยีดียังไง
+                            <a href="#title-2" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800  hover:before:w-full hover:before:opacity-100">
+                                Title name 2
                             </a>
                         </li>
                         <li class="">
                             <a href="#list-3" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
-                                เทรนด์เทคโนโลยีปี 2024
+                                Title name 3
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- blog center -->
-            <div class="lg:w-[60%] ">
-
-                <!-- Topic name blog -->
-                <h3 id="list-1" class="font-[Kanit] text-3xl font-medium text-center mb-2 hover:relative hover:bottom-1">เเบไต๋ 5
-                    เทรนด์เทคโนโลยี 2024 <br>
-                    มีอะไรน่าจับตา ไปชมกัน !</h3>
-
-                <!-- name && profile -->
-                <div class="flex flex-row gap-3 justify-center items-center">
-
-                    <!-- img profile -->
-                    <a href="#">
-                        <img class="lg:hidden w-[56px] rounded-full object-fill hover:shadow-xl"
-                            src="https://png.pngtree.com/png-clipart/20230713/ourlarge/pngtree-d-render-of-a-young-man-with-black-leather-jacket-and-png-image_7509142.png">
-                    </a>
-                    <a href="">
-                        <p class="text-sm font-medium">Sirisak in Design</p>
-                    </a>
-                    <p class="text-sm text-gray-700 font-light flex items-center gap-1">
-                        <i class='bx bx-time-five text-[1.5rem] text-black'></i>
-                        April 19,2024 6 min read
-                    </p>
+            <!-- center -->
+            <!-- input title -->
+            <div class="lg:w-[60%]">
+                <div class="mt-5 mx-auto">
+                    <input
+                        class="w-full font-[Kanit] outline-none border-dashed border-blue-800 border-2 px-5 py-2 text-2xl rounded-lg hover:border-gray-700 active:border-black"
+                        type="text" placeholder="Title ..." id="title-1">
                 </div>
 
-                <!-- img blog -->
-                <img class="rounded-lg my-3 hover:shadow-2xl hover:relative hover:bottom-1"
-                    src="https://assets.beartai.com/uploads/2023/12/maxresdefault-2023-12-27T192913.384.jpg">
+                <!-- profile -->
+                <div class="mt-5">
+                    <div class="flex flex-row gap-3 justify-center items-center">
 
-                <!-- เนื้อหา blog -->
-                <div class="text-sm text-justify font-medium">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis deserunt dicta aliquid natus
-                        saepe praesentium facilis, soluta aut maxime necessitatibus tempore eligendi ipsa maiores in
-                        dolor, esse eveniet. Quisquam, officiis?</p>
+                        <!-- img profile -->
+                        <a href="#">
+                            <img class="lg:hidden w-[56px] rounded-full object-fill hover:shadow-xl"
+                                src="https://png.pngtree.com/png-clipart/20230713/ourlarge/pngtree-d-render-of-a-young-man-with-black-leather-jacket-and-png-image_7509142.png">
+                        </a>
+                        <a href="">
+                            <p class="text-sm font-medium">Sirisak in Design</p>
+                        </a>
+                        <p class="text-sm text-gray-700 font-light flex items-center gap-1">
+                            <i class='bx bx-time-five text-[1.5rem] text-black'></i>
+                            April 19,2024 6 min read
+                        </p>
+                    </div>
                 </div>
 
-                <!-- title ย่อยๆ -->
-                <h1 id="list-2" class="font-[Kanit] text-2xl font-medium my-3">
-                    ทำไมเราถึงต้องตามเทรนด์เทคโนโลยี เทคโนโลยีดียังไง
-                </h1>
-
-                <!-- เนื้อหา blog -->
-                <div class="text-sm text-justify font-medium">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis deserunt dicta aliquid natus
-                        saepe praesentium facilis, soluta aut maxime necessitatibus tempore eligendi ipsa maiores in
-                        dolor, esse eveniet. Quisquam, officiis?</p>
+                <div class="mt-5">
+                    <div
+                        class="flex h-[40vh] items-center justify-center border-blue-800 border-2 rounded-lg border-dashed hover:border-gray-700 active:border-black">
+                        <div class="">
+                            <input type="file"
+                                class="file:bg-gradient-to-b file:from-blue-500 file:to-blue-700 file:px-6 file:py-3 file:m-5 file:border-none file:rounded-full file:text-white file:cursor-pointer file:shadow-lg file:shadow-blue-600/50 bg-gradient-to-br from-gray-600 to-gray-700 text-white/80 rounded-full cursor-pointer ">
+                        </div>
+                    </div>
                 </div>
 
-                <!-- title ย่อยๆ -->
-                <h1 id="list-3" class="font-[Kanit] text-2xl font-medium my-3">
-                    เทรนด์เทคโนโลยีปี 2024
-                </h1>
+                <!-- text เนื้อหา -->
+                <div class="mt-5">
+                    <input
+                        class="w-full font-[Kanit] outline-none border-blue-800 border-2 rounded-lg border-dashed hover:border-gray-700 active:border-black py-5 px-5"
+                        type="text" placeholder="เขียนเนื้อหา ...">
+                </div>
 
-                <!-- เนื้อหา blog -->
-                <div class="text-sm text-justify font-medium">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis deserunt dicta aliquid natus
-                        saepe praesentium facilis, soluta aut maxime necessitatibus tempore eligendi ipsa maiores in
-                        dolor, esse eveniet. Quisquam, officiis?</p>
+                <!-- title 2 -->
+                <div class="mt-5 mx-auto">
+                    <input
+                        class="w-full font-[Kanit] outline-none border-dashed border-blue-800 border-2 px-5 py-2 text-2xl rounded-lg hover:border-gray-700 active:border-black"
+                        type="text" placeholder="title 2 ..." id="title-2">
+                </div>
+
+                <!-- text 2 เนื้อหา -->
+                <div class="my-5">
+                    <input
+                        class="w-full font-[Kanit] outline-none border-blue-800 border-2 rounded-lg border-dashed hover:border-gray-700 active:border-black py-10 px-5"
+                        type="text" placeholder="เขียนเนื้อหา ...">
+                </div>
+
+                <!-- btn submit -->
+                <div>
+                    <div class="flex justify-center">
+                        <button
+                            class=" font-normal text-lg px-6 py-2 bg-gradient-to-b from-blue-500 to-blue-700 text-white rounded-xl shadow-lg shadow-blue-600/50 active:bg-gradient-to-b active:from-blue-700 active:to-blue-900">Submit</button>
+                    </div>
                 </div>
             </div>
 
@@ -203,20 +212,19 @@
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-    </section>
-
-    <footer class="bg-[#0b0c50] mt-5 flex h-[7rem] items-center">
-        <div class="flex mx-auto w-[90%] h-[2rem] gap-2">
-            <i class='bx bx-user text-white text-[2rem]'></i>
-            <input type="text"
-                class="font-[Kanit] w-full bg-transparent border-b-[1px] border-white placeholder-gray-400 font-medium outline-none text-white"
-                placeholder="เเสดงความคิดเห็น ... ">
-            <a href="#">
-                <i class='bx bx-mail-send text-[2rem] text-white'></i>
-            </a>
+    <footer class="bg-[#0b0c50] mt-5">
+        <div class="flex w-[90%] h-[10rem] mx-auto items-center justify-center">
+            <p class="text-white font-light">copyright 2024</p>
         </div>
     </footer>
+
+
+    <!--*************************************************-->
+
+
 
     <!-- menu js -->
     <script>
