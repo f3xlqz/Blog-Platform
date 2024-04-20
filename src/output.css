@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -580,6 +584,46 @@ video {
 
 .top-\[14\%\] {
   top: 14%;
+}
+
+.bottom-\[\] {
+  bottom: ;
+}
+
+.bottom-\[70\] {
+  bottom: 70;
+}
+
+.bottom-\[70vw\] {
+  bottom: 70vw;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .z-10 {
@@ -649,6 +693,14 @@ video {
   margin-left: 0.25rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -685,6 +737,26 @@ video {
   height: 7rem;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[50yh\] {
+  height: 50yh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
 .min-h-\[35vh\] {
   min-height: 35vh;
 }
@@ -709,8 +781,60 @@ video {
   width: 100%;
 }
 
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[9\] {
+  width: 9;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[100\] {
+  width: 100;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
+}
+
+.w-\[90\] {
+  width: 90;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -723,6 +847,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -871,6 +999,10 @@ video {
   border-color: rgb(28 35 112 / var(--tw-border-opacity));
 }
 
+.border-\[\] {
+  border-color: ;
+}
+
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -905,9 +1037,117 @@ video {
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.bg-slate-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
+.bg-opacity-80 {
+  --tw-bg-opacity: 0.8;
+}
+
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
+
+.bg-opacity-70 {
+  --tw-bg-opacity: 0.7;
+}
+
+.bg-opacity-65 {
+  --tw-bg-opacity: 0.65;
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'https\:\/\/www\.jtrholidays\.com\/static\/img\/bucket\/Tours\/UAE\/Dubai\/Theme-Park\/IMG-World-of-Adventure\/IMG-World-of-Adventure-03\.jpg\'\)\] {
+  background-image: url('https://www.jtrholidays.com/static/img/bucket/Tours/UAE/Dubai/Theme-Park/IMG-World-of-Adventure/IMG-World-of-Adventure-03.jpg');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 
 .px-2 {
@@ -981,6 +1221,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[3rem\] {
+  font-size: 3rem;
 }
 
 .font-light {
@@ -1065,6 +1309,26 @@ video {
 .placeholder-gray-900::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(17 24 39 / var(--tw-placeholder-opacity));
+}
+
+.opacity-45 {
+  opacity: 0.45;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-\[100px\] {
+  opacity: 100px;
+}
+
+.opacity-\[100\] {
+  opacity: 100;
+}
+
+.opacity-\[150px\] {
+  opacity: 150px;
 }
 
 .outline-none {
@@ -1341,6 +1605,22 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:opacity-40:hover {
+  opacity: 0.4;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}
+
+.hover\:opacity-85:hover {
+  opacity: 0.85;
+}
+
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1380,6 +1660,31 @@ video {
 .hover\:before\:opacity-100:hover::before {
   content: var(--tw-content);
   opacity: 1;
+}
+
+.active\:bg-black:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.active\:text-black:active {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.active\:text-gray-900:active {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1478,6 +1783,10 @@ video {
     display: none;
   }
 
+  .lg\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .lg\:w-\[150px\] {
     width: 150px;
   }
@@ -1496,6 +1805,10 @@ video {
 
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .lg\:w-\[90vw\] {
+    width: 90vw;
   }
 
   .lg\:flex-row {
@@ -1526,6 +1839,10 @@ video {
 
   .lg\:font-medium {
     font-weight: 500;
+  }
+
+  .lg\:\*\:h-\[70vh\] > * {
+    height: 70vh;
   }
 }
 
