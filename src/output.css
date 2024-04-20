@@ -653,6 +653,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1294,6 +1299,26 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1510,6 +1535,25 @@ video {
   margin: 1.25rem;
 }
 
+.file\:m-0::file-selector-button {
+  margin: 0px;
+}
+
+.file\:my-5::file-selector-button {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.file\:mx-2::file-selector-button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.file\:my-3::file-selector-button {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .file\:cursor-pointer::file-selector-button {
   cursor: pointer;
 }
@@ -1574,6 +1618,16 @@ video {
 .file\:px-4::file-selector-button {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.file\:py-5::file-selector-button {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.file\:px-3::file-selector-button {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .file\:text-white::file-selector-button {
