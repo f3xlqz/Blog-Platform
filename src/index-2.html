@@ -43,7 +43,7 @@
                 class="z-10 nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 font-medium">
                     <li>
-                        <a class="hover:text-gray-500" href="#">Home</a>
+                        <a class="hover:text-gray-500" href="index.html">Home</a>
                     </li>
                     <li>
                         <a class="hover:text-gray-500" href="#">Create Blog</a>
@@ -56,7 +56,7 @@
             <div class="flex items-center gap-2">
                 <button class="bg-[#000] text-white px-5 py-2 rounded-lg hover:bg-[#1c2370]">Get Started</button>
 
-                <button class="text-black px-5 py-2 rounded-lg hover:bg-[#1c2370] hover:text-white">login</button>
+                <button class="relative bg-transparent border-[1.5px] border-[#1c2370] rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:font-normal	before:hover:scale-100">login</button>
 
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
@@ -90,17 +90,17 @@
                     </h1>
                     <ul class="lg:font-[Kanit]">
                         <li class="">
-                            <a href="#" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
+                            <a href="#list-1" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
                                 เเบไต๋ 5 เทรนด์เทคโนโลยี <br> น่าจับตาไปชมกัน !
                             </a>
                         </li>
                         <li class="">
-                            <a href="#" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800  hover:before:w-full hover:before:opacity-100">
+                            <a href="#list-2" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800  hover:before:w-full hover:before:opacity-100">
                                 ทำไมเราถึงต้องตามเทรนด์เทคโนโลยี เทคโนโลยีดียังไง
                             </a>
                         </li>
                         <li class="">
-                            <a href="#" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
+                            <a href="#list-3" class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
                                 เทรนด์เทคโนโลยีปี 2024
                             </a>
                         </li>
@@ -112,7 +112,7 @@
             <div class="lg:w-[60%] ">
 
                 <!-- Topic name blog -->
-                <h3 class="font-[Kanit] text-3xl font-medium text-center mb-2 hover:relative hover:bottom-1">เเบไต๋ 5
+                <h3 id="list-1" class="font-[Kanit] text-3xl font-medium text-center mb-2 hover:relative hover:bottom-1">เเบไต๋ 5
                     เทรนด์เทคโนโลยี 2024 <br>
                     มีอะไรน่าจับตา ไปชมกัน !</h3>
 
@@ -145,7 +145,7 @@
                 </div>
 
                 <!-- title ย่อยๆ -->
-                <h1 class="font-[Kanit] text-2xl font-medium my-3">
+                <h1 id="list-2" class="font-[Kanit] text-2xl font-medium my-3">
                     ทำไมเราถึงต้องตามเทรนด์เทคโนโลยี เทคโนโลยีดียังไง
                 </h1>
 
@@ -157,7 +157,7 @@
                 </div>
 
                 <!-- title ย่อยๆ -->
-                <h1 class="font-[Kanit] text-2xl font-medium my-3">
+                <h1 id="list-3" class="font-[Kanit] text-2xl font-medium my-3">
                     เทรนด์เทคโนโลยีปี 2024
                 </h1>
 
@@ -174,29 +174,31 @@
 
                 <div class="lg:relative lg:top-[7.1rem]">
                     <a href="#">
-                        <img class="w-[56px] rounded-full object-fill hover:shadow-xl mb-3"
+                        <img class="w-[56px] rounded-full object-fill hover:shadow-xl mb-3 hover:border-2 hover:border-transparent"
                             src="https://png.pngtree.com/png-clipart/20230713/ourlarge/pngtree-d-render-of-a-young-man-with-black-leather-jacket-and-png-image_7509142.png">
                     </a>
                     <h1 class="text-lg font-medium">Sirisak Sueakkam</h1>
                     <p class="text-gray-700 text-sm mb-2">789 Followers</p>
                     <p class="text-sm">Student - Front-end Developer (Dev Init #2)</p>
                     <div class="">
-                        <button class="bg-blue-500 text-white px-5 py-2 rounded-xl my-3 text-sm">Follow</button>
-                        <i class='bx bx-envelope bg-blue-500 px-2 py-2 text-xl text-white rounded-full relative top-[0.25rem]'></i>
+                        <button class="relative bg-transparent border-[1.5px] border-blue-900 rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-100">Follow</button>
+                        <a href="">
+                            <i class='bx ml-1 bx-envelope bg-blue-900 px-2 py-2 text-xl text-white font-thin rounded-full relative top-[0.25rem]'></i>
+                        </a>
                     </div>
                     <p class="">Contact :</p>
                     <div class="flex ">
                         <a href="https://github.com/f3xlqz" target="_blank">
-                            <i class='bx bxl-github text-[2rem] text-blue-600'></i>
+                            <i class='bx bxl-github text-[2rem] text-blue-900 hover:text-black'></i>
                         </a>
                         <a href="mailto:f3xlqz1212312121@gmail.com">
-                            <i class='bx bxs-envelope text-[2rem] text-blue-600'></i>
+                            <i class='bx bxs-envelope text-[2rem] text-blue-900 hover:text-black'></i>
                         </a>
                         <a href="https://www.instagram.com/f3xlqz_/" target="_blank">
-                            <i class='bx bxl-instagram text-[2rem] text-blue-600'></i>
+                            <i class='bx bxl-instagram text-[2rem] text-blue-900 hover:text-black'></i>
                         </a>
                         <a href="https://www.facebook.com/sirisak.suekham.9/" target="_blank">
-                            <i class='bx bxl-facebook-circle text-[2rem] text-blue-600'></i>
+                            <i class='bx bxl-facebook-circle text-[2rem] text-blue-900 hover:text-black'></i>
                         </a>
                     </div>
                 </div>
