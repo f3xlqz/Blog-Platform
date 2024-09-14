@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailwind -->
+    <link href="./output.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="font-[Poppins]">
+
+    <!-- nav -->
+    <header class="flex h-[5rem]">
+
+        <nav class="bg-white h-[5rem] flex justify-between items-center w-[92%] ml-[5%] mr-[5%] md:fixed lg:fixed z-50">
+            <div>
+                <a href="#">
+                    <h1 class="font-[Kanit] font-medium	text-xl md:text-3xl lg:text-3xl text-[#000292]">
+                        บล็อกคลิ้คซ์
+                    </h1>
+                </a>
+            </div>
+            <div
+                class="z-10 nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[35vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 font-medium">
+                    <li>
+                        <a class="hover:text-gray-500" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="index-4-create.html">Create Blog</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-500" href="index-3-profile.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+                <button class="bg-[#000] text-white px-5 py-2 rounded-lg hover:bg-[#1c2370]">Get Started</button>
+
+                <button
+                    class="relative bg-transparent border-[1.5px] border-[#1c2370] rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:font-normal	before:hover:scale-100">login</button>
+
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ช่องค้นหา -->
+    <section>
+        <div class="flex relative w-[90%] mx-auto mt-5 items-center">
+            <input type="text"
+                class="font-[Kanit] pl-10 w-full h-[2rem] bg-transparent border-b-2 border-gray-700 placeholder-gray-900 font-normal	outline-none"
+                placeholder="ค้นหาบล็อกคลิ้คซ์ที่ใช่... ">
+            <i class="bx bx-search text-gray-900 absolute ml-3"></i>
+        </div>
+    </section>
+
+    <!-- home -->
+
+    <section class="my-5">
+        <div class="flex flex-col w-[90%] mx-auto lg:flex lg:flex-row lg:gap-5">
+
+            <!-- all blog-->
+
+            <!-- blog side ซ้าย -->
+            <div class="hidden lg:w-[20%] lg:flex">
+
+                <div class="lg:mt-5">
+                    <h1 class="lg:text-3xl lg:font-medium lg:my-0">
+                        Contents
+                        <hr class="border-black border-[1px] mb-2">
+                    </h1>
+                    <ul class="lg:font-[Kanit]">
+                        <li class="">
+                            <a href="#list-1"
+                                class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
+                                คนไทยเสียภาษีกี่คน มนุษย์เงินเดือนแบกภาษีจริงหรือ?
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#list-2"
+                                class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800  hover:before:w-full hover:before:opacity-100">
+                                คนไทยเสียภาษีกี่คน 6% ของคนไทยเท่านั้นที่เสียภาษี จริงหรือ?
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#list-3"
+                                class="lg:text-base lg:font-medium lg:my-3 inline-block duration-500 relative transition-all cursor-pointer before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-[0.15rem] before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-800 hover:before:w-full hover:before:opacity-100">
+                                สัดส่วนรายได้จากภาษีกับ GDP ของไทย เป็นยังไงบ้าง?
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- blog center -->
+            <div class="lg:w-[60%] font-[Kanit]">
+
+                <!-- Topic name blog -->
+                <h3 id="list-1"
+                    class="font-[Kanit] text-3xl font-medium text-center mb-2 hover:relative hover:bottom-1">
+                    คนไทยเสียภาษีกี่คน มนุษย์เงินเดือนแบกภาษีจริงหรือ?
+                </h3>
+
+                <!-- name && profile -->
+                <div class="flex flex-row gap-3 justify-center items-center">
+
+                    <!-- img profile -->
+                    <a href="index-3-profile.html">
+                        <img class="lg:hidden w-[56px] rounded-full object-fill hover:shadow-xl"
+                            src="https://png.pngtree.com/png-clipart/20230713/ourlarge/pngtree-d-render-of-a-young-man-with-black-leather-jacket-and-png-image_7509142.png">
+                    </a>
+                    <a href="">
+                        <p class="text-sm font-medium">Sirisak in Design</p>
+                    </a>
+                    <p class="text-sm text-gray-700 font-light flex items-center gap-1">
+                        <i class='bx bx-time-five text-[1.5rem] text-black'></i>
+                        April 19,2024 6 min read
+                    </p>
+                </div>
+
+                <!-- img blog -->
+                <img class="rounded-lg my-3 hover:shadow-2xl hover:relative hover:bottom-1"
+                    src="https://www.moneybuffalo.in.th/wp-content/uploads/2024/04/How-many-Thai-people-pay-taxes-e1714455840448.jpg">
+
+                <!-- เนื้อหา blog -->
+                <div class="text-sm text-justify font-medium">
+                    <p>
+                        สำหรับมนุษย์เงินเดือนการยื่นแบบภาษีบุคคลธรรมดาก็แทบเป็นอีเว้นท์ใหญ่ประจำปี
+                        ซึ่งมักจะเกิดคำถามขึ้นมาเสมอ จริงหรือไม่คนไทยส่วนน้อยที่เป็นมนุษย์เงินเดือน
+                        แบกภาษีของประเทศนี้อยู่ เพราะจ่ายภาษีอยู่กลุ่มเดียว สรุปแล้ว คนไทยเสียภาษีกี่คน
+                        วันนี้พี่ทุยขอพาทุกคนไปเจาะลึกว่าปัญหาว่า คนไทยส่วนน้อยแบกรับภาษีแทนคนส่วนใหญ่จริงหรือเปล่า
+                        ไปฟังกัน
+                    </p>
+                </div>
+
+                <!-- title ย่อยๆ -->
+                <h1 id="list-2" class="font-[Kanit] text-2xl font-medium my-3">
+                    คนไทยเสียภาษีกี่คน 6% ของคนไทยเท่านั้นที่เสียภาษี จริงหรือ?
+                </h1>
+
+                <!-- เนื้อหา blog -->
+                <div class="text-sm text-justify font-medium">
+                    <p>
+                        มีคนไทยแค่ 6% ที่เสียภาษี วลีเด็ดนี้มาจากข้อมูลปี 2564
+                        ที่ประชาชนยื่นแบบแสดงภาษีเงินได้บุคคลธรรมดา 10.3 ล้านคน โดยมีผู้ที่เสียภาษี 4.17 ล้านคน
+                        เมื่อคิดจากประชากรไทยจำนวน 66 ล้านคน จะได้อัตราส่วนคนไทยที่เสียภาษี 6.31% ของประชาชนทั้งหมด
+
+                        โดยข้อมูลย้อนหลังระหว่างปี 2562-2563 มีรายละเอียดการเสียภาษีของประชาชนชาวไทย ดังนี้
+
+                        ปี 2562 ประชาชนยื่นแบบแสดงภาษีเงินได้บุคคลธรรมดา 11.8 ล้านคน มีผู้เสียภาษี 4.02 ล้านคน
+                        ปี 2563 ประชาชนยื่นแบบแสดงภาษีเงินได้บุคคลธรรมดา 10.6 ล้านคน มีผู้เสียภาษี 3.95 ล้านคน
+                        อ้างอิงจากข้อมูลปี 2565 พบว่าประเทศไทยมีรายได้ที่เป็นภาษีอากร (เก็บจากประชาชนโดยตรง) 2.805
+                        ล้านล้านบาท คิดเป็น 78% ของรายได้ประเทศทั้งหมด นำโดยภาษีมูลค่าเพิ่ม (VAT) 9.364 แสนล้านบาท
+                        ภาษีเงินได้นิติบุคคล 7.476 แสนล้านบาท และภาษีเงินได้บุคคลธรรมดา 3.742 แสนล้านบาท
+
+                        ในส่วนภาษีเงินได้บุคคลธรรมดาส่วนใหญ่ 79% มาจากเงินเดือน และอีก 21% มาจากช่องทางอื่น
+                        แสดงว่าประชาชนที่แบกภาระภาษีเงินได้บุคคลธรรมดาส่วนใหญ่เป็นมนุษย์เงินเดือน
+                    </p>
+                </div>
+
+                <!-- title ย่อยๆ -->
+                <h1 id="list-3" class="font-[Kanit] text-2xl font-medium my-3">
+                    สัดส่วนรายได้จากภาษีกับ GDP ของไทย เป็นยังไงบ้าง?
+                </h1>
+
+                <!-- เนื้อหา blog -->
+                <div class="text-sm text-justify font-medium">
+                    <p>
+                        ม้ปี 2563 ประเทศไทยจะมีรายได้จากภาษีรวมทุกประเภทเพิ่มมาเป็น 2,863,398 ล้านบาท จากปี 2546
+                        ที่มีรายได้จากภาษี 968,330.21 แต่สัดส่วนรายได้ภาษีต่อ GDP ซึ่งนับตั้งแต่ไปแตะระดับสูงสุดในปี
+                        2556 ที่ 18.44% กลับอยู่ในแนวโน้มขาลง จนมาถึงปี 2562 อยู่ที่ 16.14% และปี 2563 อยู่ที่ 15.73%
+
+                        จากข้อมูลปี 2563
+                        เมื่อเทียบกับประเทศรายได้ปานกลางระดับสูงที่อยู่ในกลุ่มเดียวกับประเทศไทยกลับพบว่าประเทศไทยมีสัดส่วนรายได้ภาษีต่อ
+                        GDP น้อยกว่า เช่น ตุรกีอยู่ที่ 16.78%, บราซิลอยู่ที่ 23.33%, แอฟริกาใต้อยู่ที่ 25.14%
+                        และจีนอยู่ที่ 16.26%
+
+
+                        ส่วนประเทศที่มีรายได้สูงมีรายได้ภาษีต่อ GDP อยู่ที่ประมาณ 20% แต่ที่น่าสนใจมากคือ
+                        สัดส่วนรายได้ภาษีต่อ GDP กลับไม่มีแนวโน้มลดลงตลอด 10 ปีที่ผ่านมา
+                    </p>
+                </div>
+            </div>
+
+            <!-- blog right -->
+            <div class="hidden lg:w-[20%] lg:flex">
+
+                <div class="lg:relative lg:top-[7.1rem]">
+                    <a href="index-3-profile.html">
+                        <img class="w-[56px] rounded-full object-fill hover:shadow-xl mb-3 hover:border-2 hover:border-transparent"
+                            src="https://png.pngtree.com/png-clipart/20230713/ourlarge/pngtree-d-render-of-a-young-man-with-black-leather-jacket-and-png-image_7509142.png">
+                    </a>
+                    <h1 class="text-lg font-medium">Sirisak Sueakkam</h1>
+                    <p class="text-gray-700 text-sm mb-2">789 Followers</p>
+                    <p class="text-sm">Student - Front-end Developer (Dev Init #2)</p>
+                    <div class="">
+                        <button
+                            class="relative bg-transparent border-[1.5px] border-blue-900 rounded text-black px-5 py-2 my-3 font-medium text-sm uppercase transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-blue-900 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-100">Follow</button>
+                        <a href="">
+                            <i
+                                class='bx ml-1 bx-envelope bg-blue-900 px-2 py-2 text-xl text-white font-thin rounded-full relative top-[0.25rem]'></i>
+                        </a>
+                    </div>
+                    <p class="">Contact :</p>
+                    <div class="flex ">
+                        <a href="https://github.com/f3xlqz" target="_blank">
+                            <i class='bx bxl-github text-[2rem] text-blue-900 hover:text-black'></i>
+                        </a>
+                        <a href="mailto:f3xlqz1212312121@gmail.com">
+                            <i class='bx bxs-envelope text-[2rem] text-blue-900 hover:text-black'></i>
+                        </a>
+                        <a href="https://www.instagram.com/f3xlqz_/" target="_blank">
+                            <i class='bx bxl-instagram text-[2rem] text-blue-900 hover:text-black'></i>
+                        </a>
+                        <a href="https://www.facebook.com/sirisak.suekham.9/" target="_blank">
+                            <i class='bx bxl-facebook-circle text-[2rem] text-blue-900 hover:text-black'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <footer class="bg-[#0b0c50] mt-5 flex h-[7rem] items-center">
+        <div class="flex mx-auto w-[90%] h-[2rem] gap-2">
+            <i class='bx bx-user text-white text-[2rem]'></i>
+            <input type="text"
+                class="font-[Kanit] w-full bg-transparent border-b-[1px] border-white placeholder-gray-400 font-medium outline-none text-white"
+                placeholder="เเสดงความคิดเห็น ... ">
+            <a href="#">
+                <i class='bx bx-mail-send text-[2rem] text-white'></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- menu js -->
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[14%]')
+        }
+    </script>
+
+</body>
+
+</html>
